@@ -52,8 +52,19 @@ The baseline achieves the following Cell Retrieval Recall on the AerialLoc test 
 
 
 
-
-
 ### Fine Localization
 
 Given the retrieved candidate cells, the fine localization stage estimates the target position within each candidate cell using the textual query and the corresponding cell representation. These local predictions are mapped back to the scene-level coordinate frame to obtain the final position estimate.
+
+
+The baseline achieves the following Fine Localization Recall on the AerialLoc test split under different spatial thresholds:
+
+| **Spatial threshold ε (m)** | **k = 1** | **k = 3** | **k = 5** | **k = 10** |
+|---:|---:|---:|---:|---:|
+| 5  | 3.43 | 5.61 | 6.85 | 9.35 |
+| 10 | 4.47 | 7.23 | 8.10 | 13.08 |
+| 15 | 5.09 | 8.02 | 10.21 | 14.87 |
+| 20 | 6.12 | 10.41 | 12.91 | 17.93 |
+
+
+
