@@ -34,8 +34,8 @@ Representative final annotations from AerialLoc, showing point-centered aerial v
 The AerialLoc dataset can be downloaded from the given [download link](https://docs.google.com/forms/d/e/1FAIpQLScAu-up_UeIOYu0NTVjZVInO8PJTVkYu9q72pmJZFRdp52JRQ/viewform?usp=publish-editor).
 
 
+## Benchmark Tasks and Baseline Results
 
-## Benchmark Tasks
 AerialLoc evaluates language-based 3D position localization through two stages of a coarse-to-fine localization pipeline.
 
 ### Global Place Recognition
