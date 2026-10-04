@@ -27,6 +27,15 @@ Representative final annotations from AerialLoc, showing point-centered aerial v
 </div>
 
 
+
+## Dataset Download
+
+The AerialLoc dataset can be downloaded from [link].
+
+
+
+
+
 ## Benchmark Tasks
 
 ### Global Place Recognition
