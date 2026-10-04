@@ -135,3 +135,11 @@ The baseline achieves the following Fine Localization Recall on the AerialLoc te
 
 
 
+## Setup
+
+### Training
+
+### Evaluation
+
+### Pre-trained Models
+
