@@ -31,8 +31,6 @@ Representative final annotations from AerialLoc, showing point-centered aerial v
 ## Dataset Download
 
 
-## Dataset Download
-
 The AerialLoc dataset can be downloaded from the given [download link](https://docs.google.com/forms/d/e/1FAIpQLScAu-up_UeIOYu0NTVjZVInO8PJTVkYu9q72pmJZFRdp52JRQ/viewform?usp=publish-editor).
 
 
