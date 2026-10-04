@@ -42,13 +42,36 @@ AerialLoc evaluates language-based 3D position localization through two stages o
 Given a natural-language query, the global place recognition stage retrieves the top-\(k\) candidate cells from the AerialLoc cell database. The objective is to identify the spatial cell associated with the target position among the retrieved candidates.
 
 The baseline achieves the following Cell Retrieval Recall on the AerialLoc test split:
+<div align="center">
 
-| **k** | **Cell Retrieval Recall@k (%) ↑** |
-|---:|---:|
-| 1  | 3.43 |
-| 3  | 7.21 |
-| 5  | 10.28 |
-| 10 | 16.10 |
+<table>
+  <thead>
+    <tr>
+      <th>k</th>
+      <th>Cell Retrieval Recall@k (%) ↑</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">3.43</td>
+    </tr>
+    <tr>
+      <td align="center">3</td>
+      <td align="center">7.21</td>
+    </tr>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">10.28</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td align="center">16.10</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 
 
