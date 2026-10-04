@@ -27,4 +27,8 @@ Representative final annotations from AerialLoc, showing point-centered aerial v
 </div>
 
 
-## Benchmark Tasks 
+## Benchmark Tasks
+
+### Global Place Recognition
+
+### Fine Localization
