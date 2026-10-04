@@ -82,12 +82,56 @@ Given the retrieved candidate cells, the fine localization stage estimates the t
 
 The baseline achieves the following Fine Localization Recall on the AerialLoc test split under different spatial thresholds:
 
-| **Spatial threshold ε (m)** | **k = 1** | **k = 3** | **k = 5** | **k = 10** |
-|---:|---:|---:|---:|---:|
-| 5  | 3.43 | 5.61 | 6.85 | 9.35 |
-| 10 | 4.47 | 7.23 | 8.10 | 13.08 |
-| 15 | 5.09 | 8.02 | 10.21 | 14.87 |
-| 20 | 6.12 | 10.41 | 12.91 | 17.93 |
+
+
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" align="center">Spatial threshold ε (m)</th>
+      <th colspan="4" align="center">Fine Localization Recall@k (%) ↑</th>
+    </tr>
+    <tr>
+      <th align="center">k = 1</th>
+      <th align="center">k = 3</th>
+      <th align="center">k = 5</th>
+      <th align="center">k = 10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">5</td>
+      <td align="center">3.43</td>
+      <td align="center">5.61</td>
+      <td align="center">6.85</td>
+      <td align="center">9.35</td>
+    </tr>
+    <tr>
+      <td align="center">10</td>
+      <td align="center">4.47</td>
+      <td align="center">7.23</td>
+      <td align="center">8.10</td>
+      <td align="center">13.08</td>
+    </tr>
+    <tr>
+      <td align="center">15</td>
+      <td align="center">5.09</td>
+      <td align="center">8.02</td>
+      <td align="center">10.21</td>
+      <td align="center">14.87</td>
+    </tr>
+    <tr>
+      <td align="center">20</td>
+      <td align="center">6.12</td>
+      <td align="center">10.41</td>
+      <td align="center">12.91</td>
+      <td align="center">17.93</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 
 
