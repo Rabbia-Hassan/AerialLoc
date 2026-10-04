@@ -15,6 +15,15 @@ AerialLoc introduces a dataset and benchmark for localizing 3D positions in city
 
 ## Dataset
 
-## Dataset
-
 AerialLoc is built on the aerial photogrammetric point-cloud scenes of SensatUrban through georeferencing and spatial target sampling. Point-centered overhead imagery is used to support annotation, while the final benchmark pairs the sampled 3D locations with human-refined descriptions validated against the corresponding point-cloud scenes. In total, AerialLoc spans 38 aerial scenes across Birmingham and Cambridge, covering approximately 6 km², with 44,730 textual descriptions and 2,157 landmarks.
+
+
+### Representative Annotations
+
+<p align="center">
+  <img src="assets/example_annotations.svg" width="80%">
+</p>
+
+<p align="center">
+  <em>Representative final annotations from AerialLoc, showing point-centered aerial views and their corresponding human-refined descriptions.</em>
+</p>
