@@ -36,7 +36,11 @@ The AerialLoc dataset can be downloaded from the given [download link](https://d
 
 
 ## Benchmark Tasks
+AerialLoc evaluates language-based 3D position localization through two stages of a coarse-to-fine localization pipeline.
 
 ### Global Place Recognition
+Given a natural-language query, the global place recognition stage retrieves the top-\(k\) candidate cells from the AerialLoc cell database. The objective is to identify the spatial cell associated with the target position among the retrieved candidates.
 
 ### Fine Localization
+
+Given the retrieved candidate cells, the fine localization stage estimates the target position within each candidate cell using the textual query and the corresponding cell representation. These local predictions are mapped back to the scene-level coordinate frame to obtain the final position estimate.
