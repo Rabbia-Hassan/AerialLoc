@@ -20,13 +20,10 @@ AerialLoc is built on the aerial photogrammetric point-cloud scenes of SensatUrb
 
 ### Representative Annotations
 
-<p align="center">
-  <img src="assets/example_annotations.svg" width="80%">
-</p>
-
-<p align="center">
+<div align="center">
+  <img src="assets/example_annotations.svg" width="80%"><br>
   <em>Representative final annotations from AerialLoc, showing point-centered aerial views and their corresponding human-refined descriptions.</em>
-</p>
+</div>
 
 
 ## Benchmark Tasks 
