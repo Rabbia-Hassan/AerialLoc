@@ -197,7 +197,7 @@ python -m evaluation.pipeline \
 ```
 ### Pre-trained Models
 
-You can access the pre-trained models HERE (https://drive.google.com/drive/folders/1N9-5zk7tpePSpq1M_Ga6HN3huFFrWqJn?usp=sharing). To run the evaluation, save them as follows:
+You can access the pre-trained models [here] (https://drive.google.com/drive/folders/1N9-5zk7tpePSpq1M_Ga6HN3huFFrWqJn?usp=sharing). To run the evaluation, save them as follows:
 
 ```bash
 ./checkpoints/coarse.pth
