@@ -162,6 +162,25 @@ python -m training.coarse \
 ### Fine Localization 
 
 
+```bash
+  python -m training.fine \
+   --dataset aerialloc \
+  --use_features "class"  "color"  "position"  "num" \
+  --no_pc_augment \
+  --fixed_embedding \
+  --regressor_cell all \
+  --batch_size 32 \
+  --hungging_model t5-large \
+  --learning_rate 0.00003 \
+  --shuffle \
+  --base_path ./data/out_30-10_gridCells_pd35_pc4_all_nm-6 \
+  --epochs 50 \
+  --folder_name PATH_TO_FINE
+  --num_mentioned 10 \
+  --enforce_fixed_num_mentioned 0
+```
+
+
 
 ### Evaluation
 
