@@ -183,6 +183,17 @@ python -m training.coarse \
 
 
 ### Evaluation
-
+```bash
+python -m evaluation.pipeline \
+  --dataset aerialloc \
+  --base_path ./data/out_30-10_gridCells_pd35_pc4_all_nm-6 \
+  --use_features "class" "color" "position" "num" \
+  --no_pc_augment \
+  --no_pc_augment_fine \
+  --hungging_model t5-large \
+  --fixed_embedding \
+  --path_coarse ./checkpoints/{PATH_TO_COARSE}/{COARSE_MODEL_NAME} \
+  --path_fine ./checkpoints/{PATH_TO_FINE}/{FINE_MODEL_NAME} 
+```
 ### Pre-trained Models
 
