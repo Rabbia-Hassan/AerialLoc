@@ -1,6 +1,6 @@
 # AerialLoc: A Dataset and Benchmark for Language-Based 3D Position Localization in City-Scale Aerial Point Clouds
 
-## Overview
+### Overview
 
 AerialLoc introduces a dataset and benchmark for localizing 3D positions in city-scale aerial point clouds from natural-language descriptions of their surroundings. It pairs target positions with human-annotated descriptions that capture surrounding objects, landmarks, and spatial relationships. The benchmark supports global place recognition and fine localization, with a Benchmark Adaptation Pipeline that enables evaluation using existing coarse-to-fine localization models.
 
@@ -13,12 +13,12 @@ AerialLoc introduces a dataset and benchmark for localizing 3D positions in city
 </p>
 
 
-## Dataset
+### Dataset
 
 AerialLoc is built on the aerial photogrammetric point-cloud scenes of SensatUrban through georeferencing and spatial target sampling. Point-centered overhead imagery is used to support annotation, while the final benchmark pairs the sampled 3D locations with human-refined descriptions validated against the corresponding point-cloud scenes. In total, AerialLoc spans 38 aerial scenes across Birmingham and Cambridge, covering approximately 6 km², with 44,730 textual descriptions and 2,157 landmarks.
 
 
-### Representative Annotations
+#### Representative Annotations
 
 Representative final annotations from AerialLoc, showing point-centered aerial views and their corresponding human-refined descriptions.
 
@@ -28,17 +28,17 @@ Representative final annotations from AerialLoc, showing point-centered aerial v
 
 
 
-## Dataset Download
+### Dataset Download
 
 
 The AerialLoc dataset can be downloaded from the given [download link](https://docs.google.com/forms/d/e/1FAIpQLScAu-up_UeIOYu0NTVjZVInO8PJTVkYu9q72pmJZFRdp52JRQ/viewform?usp=publish-editor).
 
 
-## Benchmark Tasks and Baseline Results
+### Benchmark Tasks and Baseline Results
 
 AerialLoc evaluates language-based 3D position localization through two stages of a coarse-to-fine localization pipeline.
 
-### Global Place Recognition
+#### Global Place Recognition
 Given a natural-language query, the global place recognition stage retrieves the top-\(k\) candidate cells from the AerialLoc cell database. The objective is to identify the spatial cell associated with the target position among the retrieved candidates.
 
 The baseline achieves the following Cell Retrieval Recall on the AerialLoc test split:
@@ -75,7 +75,7 @@ The baseline achieves the following Cell Retrieval Recall on the AerialLoc test 
 
 
 
-### Fine Localization
+#### Fine Localization
 
 Given the retrieved candidate cells, the fine localization stage estimates the target position within each candidate cell using the textual query and the corresponding cell representation. These local predictions are mapped back to the scene-level coordinate frame to obtain the final position estimate.
 
@@ -135,14 +135,14 @@ The baseline achieves the following Fine Localization Recall on the AerialLoc te
 
 
 
-## Setup
+### Setup
 
 
-### Training
+#### Training
 
 Baseline Text2Loc model can be trained using the following command:
 
-### Global Place Recognition
+#### Global Place Recognition
 
 
 ```bash
@@ -159,7 +159,7 @@ python -m training.coarse \
   --epochs 100
 ```
 
-### Fine Localization 
+#### Fine Localization 
 
 
 ```bash
@@ -182,7 +182,7 @@ python -m training.coarse \
 
 
 
-### Evaluation
+#### Evaluation
 ```bash
 python -m evaluation.pipeline \
   --dataset aerialloc \
@@ -195,7 +195,7 @@ python -m evaluation.pipeline \
   --path_coarse ./checkpoints/{PATH_TO_COARSE}/{COARSE_MODEL_NAME} \
   --path_fine ./checkpoints/{PATH_TO_FINE}/{FINE_MODEL_NAME} 
 ```
-### Pre-trained Models
+#### Pre-trained Models
 
 You can access the pre-trained models [here](https://drive.google.com/drive/folders/1N9-5zk7tpePSpq1M_Ga6HN3huFFrWqJn?usp=sharing). To run the evaluation, save them as follows:
 
@@ -204,11 +204,11 @@ You can access the pre-trained models [here](https://drive.google.com/drive/fold
 ./checkpoints/fine.pth
 ```
 
-## Citation
+### Citation
 Citation information will be updated upon publication of the AerialLoc paper.
 
 
-## Acknowledgements
+### Acknowledgements
 
 We would like to thank the authors of the following codebases:
 
