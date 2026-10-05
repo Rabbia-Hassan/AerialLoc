@@ -137,7 +137,12 @@ The baseline achieves the following Fine Localization Recall on the AerialLoc te
 
 ## Setup
 
+
 ### Training
+
+Baseline Text2Loc model can be trained using the following command:
+
+### Global Place Recognition
 
 ### Evaluation
 
