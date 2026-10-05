@@ -205,11 +205,7 @@ You can access the pre-trained models [here](https://drive.google.com/drive/fold
 ```
 
 ## Citation
-
-
-
-
-
+Citation information will be updated upon publication of the AerialLoc paper.
 
 
 ## Acknowledgements
