@@ -204,6 +204,7 @@ You can access the pre-trained models [here](https://drive.google.com/drive/fold
 ./checkpoints/fine.pth
 ```
 
+Additional implementation details and resources will be released upon publication.
 ### Citation
 Citation information will be updated upon publication of the AerialLoc paper.
 
