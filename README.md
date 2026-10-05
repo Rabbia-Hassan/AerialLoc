@@ -203,3 +203,10 @@ You can access the pre-trained models [here](https://drive.google.com/drive/fold
 ./checkpoints/coarse.pth
 ./checkpoints/fine.pth
 ```
+
+## Acknowledgements
+
+We would like to thank the authors of the following codebases:
+
+- [Text2Loc](https://github.com/Yan-Xia/Text2Loc)
+- [SoftGroup](https://github.com/thangvubk/SoftGroup)
