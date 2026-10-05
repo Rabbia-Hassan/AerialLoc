@@ -155,7 +155,7 @@ python -m training.coarse \
   --base_path ./data/out_30-10_gridCells_pd35_pc4_all_nm-6 \
   --hungging_model t5-large \
   --folder_name PATH_TO_COARSE \
-  --epochs 100 \
+  --epochs 100 
 
 
 ### Fine Localization 
