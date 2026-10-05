@@ -145,18 +145,19 @@ Baseline Text2Loc model can be trained using the following command:
 ### Global Place Recognition
 
 
+```bash
 python -m training.coarse \
   --dataset aerialloc \
-   --no_pc_augment \
+  --no_pc_augment \
   --batch_size 64 \
-  --learning_rate  0.0005 \
+  --learning_rate 0.0005 \
   --coarse_embed_dim 256 \
   --shuffle \
   --base_path ./data/out_30-10_gridCells_pd35_pc4_all_nm-6 \
   --hungging_model t5-large \
   --folder_name PATH_TO_COARSE \
-  --epochs 100 
-
+  --epochs 100
+```
 
 ### Fine Localization 
 
